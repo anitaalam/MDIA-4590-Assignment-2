@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anita's MP3 Player</title>
+   
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+
+</head>
+<body>
+    <h3>Anita's Korean Playlist</h3>
+    <div class="container">
+        <div id="cover-track">
+            <div>
+                <a href="#"><img class="album-cover" data-track="media/icy.mp3" src="images/itzy.jpg" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img class="album-cover" data-track="media/queendom.mp3" src="images/redvelvet.jpg" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img class="album-cover" data-track="media/cryforme.mp3" src="images/twice.jpg" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img class="album-cover" data-track="media/sometimes.mp3" src="images/punch.jpg" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img class="album-cover" data-track="media/thefeels.mp3" src="images/twice2.jpg" alt=""></a>
+            </div>
+            <div>
+                <a href="#"><img class="album-cover" data-track="media/money.mp3" src="images/lisa.jpg" alt=""></a>
+            </div>
+        </div>
+        
+        <!------- AUDIO ------->
+        <div class="audio-bg"></div>
+        <audio id="audio">
+            <source src="media/icy.mp3" type="audio/mpeg" id="audioSource">
+            Your browser doe not support this audio element. Please update to current version.
+        </audio>
+
+        <!------ PLAYER ------->
+        <div id="audioPlayer">
+            <p class="artist-song" id="metaTicker"></p>
+            <button id="playBtn" class="play"></button>
+            <div id="volumeControl">
+                <label id="volumeLabel" for="volume"></label>
+                <input type="range" id="volume" min="0" max="1" step="0.01" value="1" onchange="setVol(this.value)">
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>

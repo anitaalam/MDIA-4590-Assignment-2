@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animations</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="nav">
+        <a href="index.html#projects"><i class="fa-solid fa-arrow-left-long"></i></a>
+    </header>
+    <main>
+        <div class="container">
+            <section class="project03">
+                <svg id="bnr-text" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1110.5 525.3">
+                    <path class="bnr-text-path" d="M3.26,677.73c117.94-88,248.47-202.62,218.33-295.66s-115.8,53.85-68.79,199,44.07,117.12,64.25,155.79c0,0-7.7-115.74,42.64-142.14,30.82-16.17,19.69,163.68,55.19,210.54,19.71,26,10.46-165.13,39.21-193.88s80.3-28.44,65.36-79.33c-14.13-48.13-99.22,12.84-51.75,95.13s114.49-66.85,120.9-74.07,133-206.78,74.06-265.76c-26-26-129.25,211.8-37.57,325.12,26.52,32.78,57.44-76.72,70.79-97.48s137.32-191.18,110-218.49S549,470,622.39,603.83c15.08,27.51,72.11-64.24,120.2-115.64l3.06-19.49S711,626,782.68,641.88s110.62-166.24,51.73-214S727.64,460.57,760.89,478,918.68,416.13,964,439.84s102,21.71,148.12-3.27" transform="translate(-2.36 -283.89)"/></svg>
+            </section>
+            <section class="animation-container">
+                <h3>CSS Animations</h3>
+                <div>
+                    <h4>Transition and Transform</h4>
+                    <div class="animation">
+                        <p>I created an interface to preview travel popular travel destinations. This animation was created using pseudo-classes to create interaction and pseudo-elements for positioning. Flexbox was used for alignment to create the 2x2 grid.</p>
+                        <iframe class="transitiontransform1" src="transitiontransform/index.html" title="2x2 image based navigational interface"></iframe>
+                        <video playsinline autoplay muted loop>
+                            <source src="transitiontransform/transitiontransform.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div>
+                    <h4>SVG Animation Line Art</h4>
+                    <div class="animation flex-unset">
+                        <iframe src="svglineart/index.html" title="2x2 image based navigational interface"></iframe>
+                        <p>I created an animated SVG line art using stroke-dasharray and stroke-dashoffset. I first created the "hello" in Procreate and transferred it to Illustrator where I used the pen tool to write out the word.</p>
+                    </div>
+                </div>
+                <div>
+                    <h4>Scalable Preloader</h4>
+                    <div class="animation">
+                        <p>This was a two part project. Part one was to create a preloader. Part two was to make it scalable by font-size and viewport size. I used @media to make it scalable.</p>
+                        <iframe src="preloader/index.html" title="scalable preloader animation using font size"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="animation-container">
+                <h3>JavaScript &amp; GSAP Animations</h3>
+                <div>
+                    <h4>Manipulating CSS with JavaScript</h4>
+                    <div class="animation flex-unset">
+                        <iframe src="bgchange/index.html" title="using JavaScript to manipulate CSS animation"></iframe>
+                        <p>This is an introductory piece to using JavaScript to control CSS animation. An  addEventListener() was used to change the backgrond color on click. </p>
+                    </div>
+                </div>
+                <div>
+                    <h4>JavaScript Animate() Method</h4>
+                    <div class="animation">
+                        <p>On the right side is an animation that I created using the JavaScript Animate() method to create the same CSS animation as the left side. Both side has the same animation, it's just that one side is created using CSS and the other JavaScript.</p>
+                        <iframe src="jsanimate/index.html" title="using JavaScript animate method to create the same animation as the css"></iframe>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="animation-container">GSAP TimeLine</h4>
+                    <div class="animation flex-unset">
+                        <iframe src="gsap/index.html" title="Mario animation using GSAP's timeline method"></iframe>
+                        <p>This is a fun animation I created using the GSAP library. Originally, tween controls were added to the play, pause, reverse and reset buttons. However, in part two, the tween animation was converted to a timeline animation using GSAP's timeline method.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

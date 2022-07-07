@@ -1,0 +1,552 @@
+/* ===== GlOBAL ===== */
+body {
+    font-family: Montserrat;
+    position: relative;
+    line-height: 1.3;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 5;
+}
+
+h2 {
+    font-family: Bebas Neue;
+    font-size: 35px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#guide,
+#gallery,
+#testimonial {
+    margin-top: 75px;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* --- Logo ---*/
+.logo img {
+    height: 50px;
+    margin: 15px 0 15px 15px;
+}
+
+/* --- Burger --- */
+.gn-trigger {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: 0;
+    background: transparent;
+}
+
+.burger {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    width: 35px;
+    height: 2px;
+    right: 15px;
+    top: 50%;
+}
+
+.burger:before,
+.burger:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    width: 35px;
+    height: 2px;
+    right: 0;
+    transition-property: transform;
+    transition-duration: .35s;
+}
+
+.burger:before {
+    top: 12px;
+}
+
+.burger:after {
+    bottom: 12px;
+}
+
+.gn-trigger.is-active .burger:before {
+    transform: translateX(-10px);
+}
+
+.gn-trigger.is-active .burger:after {
+    transform: translateX(-10px);
+}
+
+/* ---  Global Navigation --- */
+.gn {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.gn li {
+    font-size: 18px;
+    border-bottom: 1px solid rgb(29, 29, 29);
+}
+
+.gn a {
+    color: rgb(0, 0, 0);
+    padding: 12px 25px;
+    display: block;
+    transition: 0.1s ease;
+}
+
+.gn a:hover {
+    color: rgb(118, 118, 118);
+    transform: scale(1.025);
+}
+
+/* ===== MAIN ===== */
+/* --- Banner (Section 1) --- */
+.bnr-pic {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.bnr-video {
+    display: none;
+}
+
+.video-bg {
+    position: relative;
+    z-index:-1;
+    width: 100vw;
+}
+
+.video-txt {
+    position: absolute;
+    top: 60vmin;
+}
+
+/* --- About (Section 2) --- */
+h3 {
+    font-size: 22px;
+    margin: 20px 0 15px 15px;
+}
+
+#about p {
+    font-size: 17px;
+    margin: 7px 15px 15px 15px;
+}
+
+
+/* --- Guide (Section 3) --- */
+.accordion {
+    width: 90%;
+    max-width: 90%;
+    margin: 32px auto;
+}
+
+.accordion-box {
+    position: relative;
+    margin: 10px 20px; 
+    background-color: #fff;
+    color: #111;
+    margin: 16px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.25);
+}
+
+.accordion-header {
+    position: relative;
+    padding: 10px;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.accordion-box .accordion-header::after {
+    content: "\002B";
+    font-size: 32px;
+    position: absolute;
+    right: 16px;
+}
+
+.accordion-box.active .accordion-header::after {
+    content: "\2212";
+}
+
+.accordion-content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 1s ease;
+    overflow-y: auto;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.accordion-box.active .accordion-content {
+    height: auto;
+    padding: 10px;
+}
+
+/* --- Gallery (Section 4) --- */
+.readers-works {
+    width: 100%;
+}
+
+.readers-works-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.readers-works-img img {
+    height: 150px;
+    margin: 15px;
+    box-shadow: 7px 7px 5px 2px rgba(24, 24, 24, 0.2);
+    opacity: 0.7;
+    transition: 0.3s ease;
+}
+
+.readers-works-img img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* --- Testimonials (Section 5) --- */
+
+.main-carousel {
+    margin: 35px 0 75px 0;
+}
+.carousel-cell {
+    width: 100%;
+    height: auto;
+    padding: 0 25px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.carousel-cell em {
+    font-size: 18px;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+    bottom: -35px;
+  }
+  /* white circles */
+  .flickity-page-dots .dot {
+    width: 7px;
+    height: 7px;
+    opacity: 1;
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  /* fill-in selected dot */
+  .flickity-page-dots .dot.is-selected {
+    background: rgb(0, 0, 0);
+  }
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 100px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+}
+
+/* ========================
+Media Queries
+========================= */
+@media (min-width: 576px) {
+    .bnr-pic {
+        display: none;
+    }
+
+    .bnr-video {
+        display: flex;
+        justify-content: center;
+    }
+
+    #guide,
+    #gallery,
+    #testimonial {
+    margin-top: 85px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        margin: 35px 0 20px 30px;
+        /* margin: 35px 0 15px 15px; */
+        font-size: 23px;
+    }
+
+    #about p {
+        font-size: 18px;
+        margin: 10px 45px 20px 30px;
+        /* margin: 10px 45px 20px 15px; */
+    }
+
+    .accordion-box {
+        margin: 20px 0;
+    }
+    
+    .accordion-header {
+        font-size: 19px;
+    }
+
+    .accordion-content {
+        font-size: 17px;
+    }
+
+    .readers-works-img img {
+        height: 200px;
+        margin: 18px;
+    }
+
+    .carousel-cell {
+        padding: 0 50px 0 50px;
+    }
+
+    .flickity-page-dots {
+        bottom: -50px;
+    }
+
+    footer {
+        margin-top: 120px;
+    }
+}
+
+@media (min-width: 768px) {
+    #guide,
+    #gallery,
+    #testimonial {
+        margin-top: 135px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .gn-trigger {
+        display: none;
+    }
+
+    .gn {
+        display: block !important; 
+        position: static;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .gn-items {
+        display: flex;
+        justify-content: flex-end;
+        /* align-items: center; */
+    }
+
+    .gn li {
+        border-bottom: transparent;
+        font-size: 15px;
+    }
+
+    .video-txt {
+        top: 55vmin;
+    }
+
+    h2 {
+    margin-bottom: 35px;
+    }
+
+    .accordion {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .readers-works-img img {
+        height: 250px;
+        margin: 20px;
+    }
+
+    .flickity-page-dots .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo img {
+        height: 65px;
+    }
+
+    .gn li {
+        font-size: 18px;
+    }
+
+    .video-txt {
+        top: 65vmin;
+    }
+
+    h3 {
+        margin: 35px 0 20px 40px;
+        font-size: 25px;
+    }
+
+    .second-p {
+        margin-top: 50px;
+    }
+
+    #about p {
+        font-size: 19px;
+        margin: 10px 75px 20px 40px;
+    }
+
+    .accordion-header {
+        font-size: 20px;
+    }
+
+    .accordion-content {
+        font-size: 18px;
+    }
+
+    .carousel-cell {
+        padding: 0 30px; 
+    }
+
+    .carousel-cell p {
+        font-size: 18px;
+        padding: 0 180px; 
+    }
+
+    .carousel-cell em {
+        font-size: 20px;
+    }
+
+    @media (min-width: 1200px) {
+        .logo img {
+            height: 75px;
+            margin: 20px 0 20px 20px;
+        }
+
+        .gn li {
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .video-txt {
+            top: 75vmin;
+        }
+
+        h2 {
+            font-size: 55px;
+        }
+
+        h3 {
+            margin: 35px 0 20px 55px;
+            font-size: 30px;
+        }
+
+        .second-p {
+            margin-top: 75px;
+        }
+
+        #about p {
+            font-size: 20px;
+            margin: 10px 100px 20px 55px;
+            padding-right: 50px;
+        }
+
+        .accordion {
+            width: 70%;
+            max-width: 70%;
+        }
+
+        .accordion-header {
+            font-size: 24px;
+            padding: 16px;
+        }
+    
+        .accordion-content {
+            font-size: 20px;
+        }
+
+        .readers-works-img img {
+            height: 300px;
+            margin: 20px;
+        }
+
+        .carousel-cell {
+            padding: 0 90px; 
+        }
+            
+        .carousel-cell em {
+            font-size: 24px;
+        }
+    
+        .carousel-cell p {
+            font-size: 20px;
+            padding: 0 180px; 
+        }
+
+        .flickity-page-dots .dot {
+            width: 12px;
+            height: 12px;
+        }
+
+        .flickity-page-dots {
+            bottom: -75px;
+        }
+
+        footer {
+            margin-top: 200px;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        #guide,
+        #gallery,
+        #testimonial {
+            margin-top: 200px;
+        }
+
+        .readers-works-img img {
+            height: 350px;
+        }
+    }
+}
