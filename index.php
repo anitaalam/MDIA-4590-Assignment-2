@@ -12,6 +12,7 @@
         </header>
         <main>
             <h4>testing 12333333</h4>
+            <h5>hellooooo</h5>
             <?php include __DIR__ . '/partials/homepage/banner.php'; ?>
             <?php include __DIR__ . '/project.php'; ?>
         </main>
