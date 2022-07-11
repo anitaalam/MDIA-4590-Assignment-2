@@ -12,7 +12,7 @@
         </header>
         <main>
             <?php include __DIR__ . '/partials/homepage/banner.php'; ?>
-            <?php include __DIR__ . '/projects.php'; ?>
+            <?php include __DIR__ . '/project.php'; ?>
         </main>
         <footer>
             <?php include __DIR__ . '/partials/footer.php'; ?>
