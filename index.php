@@ -11,6 +11,7 @@
             <?php include __DIR__ . '/partials/header.php'; ?>
         </header>
         <main>
+            <p>testing</p>
             <?php include __DIR__ . '/partials/homepage/banner.php'; ?>
             <?php include __DIR__ . '/project.php'; ?>
         </main>
