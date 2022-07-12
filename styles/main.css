@@ -114,7 +114,7 @@ header .logo-link {
 }
 
 .gn a {
-    color: #eab570;
+    color: #f9f8f7;
     padding: 30px 25px;
     display: inline-block;
     font-size: 50px;
@@ -122,17 +122,17 @@ header .logo-link {
     transition: all .2s ease-in-out;
 }
 
-.gn a:hover {
+/* .gn a:hover {
     transform: scale(1.1);
-}
+} */
 
 .gn a::before {
     content: "";
     height: 2px;
-    width: 60%;
+    width: 40%;
     background-color: #eab570;
     position: absolute;
-    left: 20%;
+    /* left: 20%; */
     bottom: 20%;
     transform: scaleX(0);
     transition: transform 0.3s ease;
@@ -179,21 +179,26 @@ h1 {
 .bnr a {
     margin-left: 12%;
     padding: 10px;
-    border: 1px solid #092422;
+    /* border: 1px solid #092422; */
     font-family: Montserrat;
-    color:#092422;
+    color:#f9f8f7;
     border-radius: 10px;
+    background: #eab570;
+    margin-top: 30px;
+    display: inline-block;
+    box-shadow: 4px 4px 8px 0px rgb(0 0 0 / 30%);
     transition: 0.3s;
 }
 
-.view-my-projects-btn {
+/* .view-my-projects-btn {
     margin-top: 40px;
-}
+} */
 
 .bnr a:hover {
-    background: #092422;
-    color: #f9f8f7;
+    background: rgb(234, 181, 113, 0.8);
+    color: rgb(249, 248, 247, 0.8);
 }
+
 
 /******** PROJECT ********/
 
@@ -215,6 +220,10 @@ h1 {
     margin-bottom: -10px;
 }
 
+.project-card-wrapper {
+    margin-bottom: 30px;
+}
+
 .project_card {
     position: relative;
     text-align: center;
@@ -222,6 +231,17 @@ h1 {
     width: 80vw;
     overflow: hidden;
     box-shadow: 7px 7px 15px #ccc;
+}
+
+.projectitle {
+    margin-top: 20px;
+    font-size: 25px;
+    /* color:#eab570; */
+}
+
+.project-description {
+    font-family: Montserrat;
+    width: 80vw;
 }
 
 .card_overlay {
@@ -242,7 +262,8 @@ h1 {
 }
 
 .view-btn a {
-    border: 1px solid #f9f8f7;
+    /* border: 1px solid #f9f8f7; */
+    background: #eab570;
     font-family: Montserrat;
     font-size: 14px;
     color: #f9f8f7;
@@ -251,14 +272,25 @@ h1 {
     border-radius: 10px;
 }
 
-.view-btn a:hover {
-    /* border: 1px solid #eab570; */
-    background: #eab570;
+.view-site {
+    border: 1px solid #f9f8f7;
+    /* background: #eab570; */
+    font-family: Montserrat;
+    font-size: 14px;
+    color: #f9f8f7;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 10px;
 }
 
-.projectitle {
-    font-size: 30px;
+.view-btn a:hover {
+    /* border: 1px solid #eab570; */
+    background: rgb(234, 181, 113, 0.9);
 }
+
+/* .projectitle {
+    font-size: 30px;
+} */
 
 
 /******** ABOUT ********/
@@ -348,9 +380,11 @@ Media Queries
         font-size: 42px;
     }
     .view-btn a {
-        font-size: 15px;
+        font-size: 18px;
     }
-
+    .project-description {
+        font-size: 18px;
+    }
     .anitalam {
         width: 50%;
     }
@@ -410,9 +444,34 @@ Media Queries
     .logo img {
         height: 55px;
     }
+    .bnr {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        padding-top: 25vh;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bnr-content {
+        /* margin: 15% 20% 0 10%; */
+        display: inline-block;
+        width: 40%;
+    }
 
+    h1 {
+        font-size: 35px;
+        padding-left: 0;
+    }
+
+    .bnr a {
+        margin-left: 0;
+        font-size: 22px;
+    }
     .waving {
-        padding-top: 9%;
+        height: 200px;
+        padding-top: 0;
+        margin-left: 0;
     }
     #projects h2,
     #about h2 {
@@ -421,6 +480,9 @@ Media Queries
     .project_card {
         margin-top: 5%;
         width: 50vw;
+    }
+    .project-description {
+        width: 100%;
     }
     .projectitle {
         font-size: 62px;
@@ -436,13 +498,15 @@ Media Queries
     .project_card:hover .card_overlay {
         background: rgba(0,0,0,0.5);
     }
-    .projectitle,
+    /* .projectitle, */
     .view-btn {
         opacity: 0;
         transition: 1s ease;
     }
-    
-    .project_card:hover .projectitle,
+    .project-description {
+        font-size: 20px;
+    }
+    /* .project_card:hover .projectitle, */
     .project_card:hover .view-btn {
         opacity: 1;
     }
