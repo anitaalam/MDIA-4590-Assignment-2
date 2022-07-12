@@ -261,20 +261,19 @@ h1 {
     margin: 20px 0;
 }
 
-.view-btn a {
+.view-code {
     /* border: 1px solid #f9f8f7; */
     background: #eab570;
     font-family: Montserrat;
     font-size: 14px;
     color: #f9f8f7;
-    padding: 8px;
+    padding: 10px;
     margin: 0 10px;
     border-radius: 10px;
 }
 
 .view-site {
     border: 1px solid #f9f8f7;
-    /* background: #eab570; */
     font-family: Montserrat;
     font-size: 14px;
     color: #f9f8f7;
