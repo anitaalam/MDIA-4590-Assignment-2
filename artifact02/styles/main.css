@@ -9,12 +9,10 @@ body {
     justify-content: center;
     overflow-x: hidden;
 }
-
 h3 {
     font-size: 25px;
     text-align: center;
 }
-
 .container {
     margin: 50px auto;
     max-width: 220px;
@@ -24,45 +22,37 @@ h3 {
     border-radius: 30px;
     box-shadow: 3px 3px 2px rgba(0,0,0,0.7);
 }
-
 .flex {
     display: flex;
     justify-content: center;
 }
-
 a {
     text-decoration: none;
     color: rgb(142, 196, 216);
     font-weight: 700;
     font-size: 10px;
 }
-
 a:hover {
     color: rgb(222, 133, 201);
 }
-
 .slick-slide {
     width: 0;
 }
-
 .slick-prev:before {
     content: "<";
     color: #fff;
     font-size: 30px;
   }
-  
-  .slick-next:before {
-    content: ">";
-    color: #fff;
-    font-size: 30px;
-  }
-
+.slick-next:before {
+content: ">";
+color: #fff;
+font-size: 30px;
+}
 #cover-track img {
     height: auto;
     width: 100%;
     border-radius: 10%;
 }
-
 #audioPlayer {
 	width: 210px;
     height: 200px;
@@ -72,9 +62,8 @@ a:hover {
     background-color: #1f1f32;
     border-radius: 15px;
     box-shadow: 3px 3px 2px rgba(0,0,0,0.3);
-    border: 1px solid #0000;
+    border: 1px solid #000;
 }
-
 #playBtn {
 	height: 60px;
     width: 60px;
@@ -85,14 +74,12 @@ a:hover {
     background-position: center;
     background-color: transparent;
 }
-
 .play {
     background-image: url(../images/play.png)
 }
 .pause { 
     background-image: url(../images/pause.png)
 }
-
 #volumeControl {
     display: flex;
     justify-content: center;
@@ -100,12 +87,10 @@ a:hover {
     margin: 0 auto;
     flex-direction: column;
 }
-
 #volumeControl label {
     order: 2;
     margin: auto;
 }
-
 #volumeLabel {
 	background: url(../images/volume.png);
     height: 48px;
@@ -116,7 +101,6 @@ a:hover {
     background-position: center;
     float: left;
 }
- 
 #volume {
 	margin: 15px 0;
     vertical-align: middle;
@@ -126,11 +110,9 @@ a:hover {
     border-radius: 10px;
     display: none;
 }
-
 #volume:hover {
     display: block;
 }
-
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
    background-color: #afafd8;
