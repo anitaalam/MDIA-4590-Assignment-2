@@ -208,7 +208,7 @@ h1 {
    margin-left: 10%;
 }
 
-.card_container {
+.card-container {
     position: relative;
     display: flex;
     flex-direction: column;
