@@ -7,7 +7,7 @@
     </head>
     <body>
         <header>
-            <?php include __DIR__ . 'partials/header.php'; ?>
+            <?php include __DIR__ . '/partials/header.php'; ?>
         </header>
         <main>
             <section id="about">
