@@ -24,11 +24,9 @@ header {
     z-index: 999;
     background-color: #092422;
 }
-
 header .logo-link {
     display: block;
 }
-
 .logo img {
     height: 45px;
     margin: 30px;
@@ -44,7 +42,6 @@ header .logo-link {
     background: transparent;
     right: 30px;
 }
-
 .burger {
     position: absolute;
     background: #eab570;
@@ -53,7 +50,6 @@ header .logo-link {
     top: 50%;
     z-index: 999;
 }
-
 .burger:before,
 .burger:after {
     content: '';
@@ -66,25 +62,20 @@ header .logo-link {
     transition-property: transform;
     transition-duration: .35s;
 }
-
 .burger:before {
     top: 12px;
 }
-
 .burger:after {
     bottom: 12px;
 }
-
 .gn-trigger.is-active .burger:before {
     transform: rotate(45deg);
     top: -2px;
 }
-
 .gn-trigger.is-active .burger:after {
     transform: rotate(-45deg);
     top: -2px;
 }
-
 .gn-trigger.is-active .burger {
     background: rgba(117, 111, 102, 0);
 }
@@ -100,16 +91,13 @@ header .logo-link {
     background: #092422;
     z-index: 1;
 }
-
 .gn-items {
     margin-top: 100px;
     text-align: center;
 }
-
 .gn li {
     font-size: 18px;
 }
-
 .gn a {
     color: #f9f8f7;
     padding: 30px 25px;
@@ -118,7 +106,6 @@ header .logo-link {
     position: relative;
     transition: all .2s ease-in-out;
 }
-
 .gn a::before {
     content: "";
     height: 2px;
@@ -130,7 +117,6 @@ header .logo-link {
     transition: transform 0.3s ease;
     transform-origin: right;
 }
-
 .gn a:hover::before{
     transform: scaleX(100%);
     transform-origin: left;
@@ -141,7 +127,7 @@ header .logo-link {
     height: 100vh;
 }
 .waving {
-    height: 7em;
+    height: 12em;
     margin-left: 12%;
     padding-top: 25%;
     transform-origin: 95% 95%;
@@ -159,11 +145,12 @@ header .logo-link {
 }
 h1 {
     font-family: Montserrat;
-    font-size: 20px;
-    padding-top: 10%;
+    font-size: 25px;
+    padding-top: 25%;
     padding-left: 12%;
 }
 .bnr a {
+    font-size: 22px;
     margin-left: 12%;
     padding: 10px;
     font-family: Montserrat;
