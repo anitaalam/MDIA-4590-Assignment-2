@@ -224,7 +224,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-.project_card {
+.project-card {
     position: relative;
     text-align: center;
     margin-top: 15%;
@@ -244,7 +244,7 @@ h1 {
     width: 80vw;
 }
 
-.card_overlay {
+.card-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -476,7 +476,7 @@ Media Queries
     #about h2 {
         font-size: 5em;
     }
-    .project_card {
+    .project-card {
         margin-top: 5%;
         width: 50vw;
     }
@@ -490,11 +490,11 @@ Media Queries
         padding: 10px;
     }
 
-    .card_overlay {
+    .card-overlay {
         background: rgba(0,0,0,0);
         transition: 1s ease;
     }
-    .project_card:hover .card_overlay {
+    .project-card:hover .card-overlay {
         background: rgba(0,0,0,0.5);
     }
     /* .projectitle, */
@@ -505,8 +505,8 @@ Media Queries
     .project-description {
         font-size: 20px;
     }
-    /* .project_card:hover .projectitle, */
-    .project_card:hover .view-btn {
+    /* .project-card:hover .projectitle, */
+    .project-card:hover .view-btn {
         opacity: 1;
     }
 
