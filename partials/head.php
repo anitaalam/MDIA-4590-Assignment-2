@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- GOOGLE FONTS -->
+<!-- GOOGLE FONT -->
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 <!-- STYLESHEETS -->
 <link rel="stylesheet" href="styles/reset.css">
@@ -27,7 +27,7 @@
 <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 <!-- METADATA TAGS -->
-<meta name="description" content="Anita Lam is a Front-end Developer. She is currently attending the New Media Design and Web Development Program at BCIT and is looking forward to starting an internship in Fall 2022.">
+<meta name="description" content="Anita Lam is a Front-end Developer. She is currently attending the New Media Design and Web Development Program at BCIT and is looking forward to starting an intership in Fall 2022.">
 <meta name="og:title" content="Anita Lam | Vancouver Front-end Developer">
 <meta name="og:site_name" content="Anita Lam Portfolio">
 <meta name="og:url" content="https://anitalam.ca">
