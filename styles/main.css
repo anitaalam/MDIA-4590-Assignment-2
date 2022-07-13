@@ -34,7 +34,7 @@ header .logo-link {
 
 .logo img {
     height: 45px;
-    margin: 15px 0 15px 15px;
+    margin: 30px;
 }
 
 /* --- Burger --- */
@@ -45,7 +45,7 @@ header .logo-link {
     border: none;
     outline: 0;
     background: transparent;
-    right: 25px;
+    right: 30px;
 }
 
 .burger {
