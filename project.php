@@ -1,6 +1,6 @@
 <section id="projects">
     <h2>Projects</h2>
-    <div class="card_container">
+    <div class="card-container">
         <div class="project-card-wrapper">
             <div class="project-card">
                 <img class="project" src="images/thebujoguide.jpg" alt="Web development project on a guide about bullet journaling.">
