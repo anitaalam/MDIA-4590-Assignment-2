@@ -1,6 +1,7 @@
 # MDIA-4590-Assignment-2
 
 Welcome to my Portfolio!!!
-Here you will find my portfolio's entire code! 
+
+Here you will find my portfolio's entire code source. 
 
 Please let me know how I cam improve! :)
