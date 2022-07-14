@@ -12,7 +12,7 @@
             </header>
             <main class="page-404">
                 <h2 class="page-404-content">OOPS, Looks like you are lost!</h2>
-                <p class="page-404-content-2">To want to go see my projects instead?</p>
+                <p class="page-404-content-2">Want to go see my projects instead?</p>
                 <a class="go-back" title="Go back to Anita's portfolio." href="https://anitalam.ca">Go Back</a>
             </main>
         </div>
