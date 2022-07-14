@@ -149,7 +149,8 @@ h1 {
     padding-top: 25%;
     padding-left: 12%;
 }
-.bnr a {
+.bnr a,
+.page-404 a {
     font-size: 22px;
     margin-left: 12%;
     padding: 10px;
@@ -162,7 +163,8 @@ h1 {
     box-shadow: 4px 4px 8px 0px rgb(0 0 0 / 30%);
     transition: 0.3s;
 }
-.bnr a:hover {
+.bnr a:hover,
+.page-404 a:hover {
     background: rgb(234, 181, 113, 0.8);
     color: rgb(249, 248, 247, 0.8);
 }
@@ -295,6 +297,21 @@ h1 {
     bottom: 10px;
 }
 
+/******** 404 PAGE ********/
+.page-404 {
+    height: 50vh;
+    width: 90%;
+}
+.page-404-content {
+    font-size: 3em;
+    margin-left: 12%;
+    margin-top: 12%;
+}
+.page-404-content-2 {
+    font-family: Montserrat;
+    margin-left: 12%;;
+}
+
 /* ========================
 Media Queries
 ========================= */
@@ -306,7 +323,8 @@ Media Queries
     h1 {
         font-size: 30px;
     }
-    .view-my-projects-btn {
+    .view-my-projects-btn,
+    .go-back {
         font-size: 22px;
     }
     .view-btn a {
